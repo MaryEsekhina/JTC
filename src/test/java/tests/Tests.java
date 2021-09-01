@@ -33,7 +33,7 @@ public class Tests extends TestBase {
         step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Нажать \"Связаться с нами\"", () -> $(".t228__right_buttons_but td").click());
         step("Проверить, что появилась форма обратной связи", () ->
-                assertThat($(".tn-elem__2402566121566896915276").isDisplayed()));
+                assertThat($(".tn-elem__2402566121566896915276").shouldBe(visible, Duration.ofSeconds(10)).isDisplayed()));
     }
     @Test
     void  aboutTest(){
