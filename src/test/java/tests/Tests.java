@@ -55,7 +55,7 @@ public class Tests extends TestBase {
     void locationTest() {
         step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Кликнуть по городу \"Рязань\"", () -> {
-            $(".t397__col").scrollTo();
+            $("#rec240558010").scrollTo();
             $("[field=title4]").click();
         });
         step("Проверить, что адрес на ул. Маяковского", () -> $(byXpath("//div[@field='title' and contains(text(),'Рязань')]/..//div[@data-customstyle='yes']"))
