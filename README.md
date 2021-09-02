@@ -38,4 +38,8 @@ gradle allureserve
 2. Открыть [проект](https://jenkins.autotests.cloud/job/c07-bukva_zu-L12-JTC/)
 3. Выбрать пункт "Собрать с параметрами"
 4. Оставить параметры по умолчанию, нажать "Собрать"
+   ![4](/ForReadMe/Imgs/jenkins_job_param.PNG)
+5. Для просмотра отчета о выполненных тестах необходимо нажать "Allure Report"
    ![img.png](ForReadMe/Imgs/jenkins_job.PNG)
+
+   
