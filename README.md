@@ -44,12 +44,12 @@ gradle allureserve
 
 ----  
 ## Просмотр информации в Allure TestOps
-[!5](/ForReadMe/Imgs/Allure_TestOps.png)
+![5](/ForReadMe/Imgs/Allure_TestOps.png)
 
 ----
 ## Отправка уведомления в Телеграм
-[!6](/ForReadMe/Imgs/TG.PNG)
+![6](/ForReadMe/Imgs/TG.PNG)
 
 ----
 ## Выидео прохождения тестов в Selenoid
-[!7](/ForReadMe/video.gif)
+![7](/ForReadMe/video.gif)
