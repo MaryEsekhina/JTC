@@ -23,14 +23,16 @@ public class Tests extends TestBase {
         step("Дождаться всплывающего сообщения", () ->
                 $(".tooltipster-fade-show .t300__content-text").shouldBe(visible, Duration.ofSeconds(10)));
         step("Проверка текста всплывающего сообщения", () ->
-                assertThat($(".tooltipster-fade-show .t300__content-text").shouldHave(text("Такие, как Газпромбанк, ВТБ и Открытие"))));
+                assertThat($(".tooltipster-fade-show .t300__content-text")
+                        .shouldHave(text("Такие, как Газпромбанк, ВТБ и Открытие"))));
     }
 
     @Test
     void contactsTest() {
         step("Нажать \"Связаться с нами\"", () -> $(".t228__right_buttons_but td").click());
         step("Проверить, что появилась форма обратной связи", () ->
-                assertThat($(".tn-elem__2402566121566896915276").shouldBe(visible, Duration.ofSeconds(10)).isDisplayed()));
+                assertThat($(".tn-elem__2402566121566896915276").shouldBe(visible, Duration.ofSeconds(10))
+                        .isDisplayed()));
     }
     @Test
     void  aboutTest(){
