@@ -39,7 +39,8 @@ gradle allureserve
 3. Выбрать пункт "Собрать с параметрами"
 4. Оставить параметры по умолчанию, нажать "Собрать"
    ![4](/ForReadMe/Imgs/jenkins_job_param.PNG)
-5. Для просмотра отчета о выполненных тестах необходимо нажать "Allure Report"
+5. Для просмотра отчета о выполненных тестах необходимо нажать "Allure Report" 
+(это можно сделать по ссылке из п.1 без регистрации)
    ![img.png](/ForReadMe/Imgs/jenkins_job.PNG)
 
 ----  
@@ -51,5 +52,5 @@ gradle allureserve
 ![6](/ForReadMe/Imgs/TG.PNG)
 
 ----
-## Выидео прохождения тестов в Selenoid
+## Видео прохождения тестов в Selenoid
 ![7](/ForReadMe/video.gif)
