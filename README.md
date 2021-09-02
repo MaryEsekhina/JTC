@@ -40,16 +40,16 @@ gradle allureserve
 4. Оставить параметры по умолчанию, нажать "Собрать"
    ![4](/ForReadMe/Imgs/jenkins_job_param.PNG)
 5. Для просмотра отчета о выполненных тестах необходимо нажать "Allure Report"
-   ![img.png](ForReadMe/Imgs/jenkins_job.PNG)
+   ![img.png](/ForReadMe/Imgs/jenkins_job.PNG)
 
 ----  
 ## Просмотр информации в Allure TestOps
-[!5](ForReadMe/Imgs/Allure_TestOps.png)
+[!5](/ForReadMe/Imgs/Allure_TestOps.png)
 
 ----
 ## Отправка уведомления в Телеграм
-[!6](ForReadMe/Imgs/TG.PNG)
+[!6](/ForReadMe/Imgs/TG.PNG)
 
 ----
 ## Выидео прохождения тестов в Selenoid
-[!7](ForReadMe/video.gif)
+[!7](/ForReadMe/video.gif)
