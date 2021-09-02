@@ -8,9 +8,13 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 
+import static com.codeborne.selenide.Configuration.baseUrl;
+import static com.codeborne.selenide.Selenide.open;
+import static io.qameta.allure.Allure.step;
 import static java.lang.String.format;
 
 public class TestBase {
@@ -31,6 +35,11 @@ public class TestBase {
         Configuration.baseUrl = "https://jtc.ooo/";
         Configuration.startMaximized = true;
 
+    }
+
+    @BeforeEach
+    void eachSetup() {
+        step("Открыть стартовую страницу", () -> open(baseUrl));
     }
 
     @AfterEach

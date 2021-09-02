@@ -18,7 +18,6 @@ public class Tests extends TestBase {
     @Test
     void checkKrutoTest() {
 
-        step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Навести курсор мыши на \"умные банки\"", () ->
                 $(withText("умные банки")).hover());
         step("Дождаться всплывающего сообщения", () ->
@@ -29,14 +28,13 @@ public class Tests extends TestBase {
 
     @Test
     void contactsTest() {
-        step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Нажать \"Связаться с нами\"", () -> $(".t228__right_buttons_but td").click());
         step("Проверить, что появилась форма обратной связи", () ->
                 assertThat($(".tn-elem__2402566121566896915276").shouldBe(visible, Duration.ofSeconds(10)).isDisplayed()));
     }
     @Test
     void  aboutTest(){
-        step("Открыть стартовую страницу", () -> open(baseUrl));
+       // step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Кликнуть \"О компании\"", () ->
                 $(withText("О компании"))
                 .shouldBe(visible,Duration.ofSeconds(3))).click();
@@ -45,7 +43,7 @@ public class Tests extends TestBase {
     }
     @Test
     void productsTest() {
-        step("Открыть стартовую страницу", () -> open(baseUrl));
+     //   step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Выбрать пункт меню \"Продукты\"", () ->$(".t228__list_item .t-menusub__target-link").hover());
         step("Выбрать продукт \"Salto.Avanti\"", () ->$(byText("Salto.Avanti")).click());
         step("Проверить, что открылась страница \"ДБО для бизнеса\"", () ->$("[field=tn_text_1566803783349]").shouldHave(text("ДБО для бизнеса")));
@@ -53,7 +51,7 @@ public class Tests extends TestBase {
 
     @Test
     void locationTest() {
-        step("Открыть стартовую страницу", () -> open(baseUrl));
+       // step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Кликнуть по городу \"Рязань\"", () -> {
             $("#rec240558010").scrollTo();
             $("[field=title4]").click();
