@@ -36,7 +36,7 @@ public class Tests extends TestBase {
     void  aboutTest(){
        // step("Открыть стартовую страницу", () -> open(baseUrl));
         step("Кликнуть \"О компании\"", () -> $(withText("О компании"))
-                .shouldBe(visible,Duration.ofSeconds(3))).click();
+                .shouldBe(visible,Duration.ofSeconds(3)).click());
         step("Проверить, что открылась страница \"О нас\"", () ->
                 assertThat($("[field=tn_text_1566803783349]").shouldHave(text("О нас"))));
     }
