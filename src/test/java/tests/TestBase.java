@@ -26,7 +26,7 @@ public class TestBase {
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
-        CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
+        CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class, System.getProperties());
         String login = credentials.login();
         String password = credentials.password();
         boolean remote = credentials.remote();
