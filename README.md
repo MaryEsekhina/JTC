@@ -32,4 +32,4 @@ gradle clean test -Dlogin=user1 -Dpassword=1234 -Dremote=true -Dselenoid=selenoi
 gradle allureserve
 ```
 После выполнения данной команды открывается окно с отчетом:
-![Allure_serve] ()
+![Allure_serve] (https://github.com/MaryEsekhina/JTC/blob/main/ForReadMe/Imgs/Allure_Report.png?raw=true)
