@@ -42,4 +42,14 @@ gradle allureserve
 5. Для просмотра отчета о выполненных тестах необходимо нажать "Allure Report"
    ![img.png](ForReadMe/Imgs/jenkins_job.PNG)
 
-   
+----  
+## Просмотр информации в Allure TestOps
+[!5](ForReadMe/Imgs/Allure_TestOps.png)
+
+----
+## Отправка уведомления в Телеграм
+[!6](ForReadMe/Imgs/TG.PNG)
+
+----
+## Выидео прохождения тестов в Selenoid
+[!7](ForReadMe/video.gif)
